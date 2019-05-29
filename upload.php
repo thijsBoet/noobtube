@@ -4,7 +4,7 @@
 <div class="column">
 
 <?php
-  $formprovider = new VideoDetailsFormProvider();
+  $formprovider = new VideoDetailsFormProvider($con);
   echo $formprovider->createUploadForm();
 ?>
 
