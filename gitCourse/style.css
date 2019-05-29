@@ -1,0 +1,46 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Bellota-BoldItalic', sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top,
+.middle,
+.bottom {
+    padding: 10px 20px;
+}
+
+.top {
+    background-color: #2ecc71
+}
+
+.middle {
+    flex: 1;
+    background-color: #3498db;
+}
+
+.bottom {
+    background-color: #e74c3c
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+}
