@@ -12,3 +12,4 @@ class VideoUploadData{
     $this->uploadedBy = $uploadedBy;
   }
 }
+?>
