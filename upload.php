@@ -1,5 +1,7 @@
-<?php include_once("includes/header.php"); ?>
-<?php include_once("includes/classes/VideoDetailsFormProvider.php"); ?>
+<?php 
+include_once("includes/header.php");
+include_once("includes/classes/VideoDetailsFormProvider.php"); 
+?>
 
 <div class="column">
 
