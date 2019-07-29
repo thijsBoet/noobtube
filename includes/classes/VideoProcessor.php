@@ -2,7 +2,7 @@
 class VideoProcessor{
 
   private $con;
-  private $sizeLimit = 5000000000;
+  private $sizeLimit = 500000000;
   private $allowedTypes = array("mp4", "flv", "webm", "mkv", "vob", "ogv", "ogg", "avi", "wmv", "mov", "mpeg", "mpg");
 
   public function __contruct($con){
@@ -29,10 +29,11 @@ class VideoProcessor{
   }
 
   private function processData($videoData, $filePath){
-    $videoType = pathInfo(strval($filePath), PATHINFO_EXTENTION);
+    $videoType = pathInfo(strval($filePath), PATHINFO_EXTENSION);
 
     if(!$this->isValidSize($videoData)){
       echo "File too large. Can't be more than " . $this->sizeLimit . " bytes.";
+      return false;
     }
     else if (!$this->isValidType($videoType)){
       echo "Invalid file type";
